@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barra no Topo da Tela</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            background-color: #075e54;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .square {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .square i {
+            font-size: 24px;
+            color: red;
+        }
+
+        .text {
+            color: white;
+            font-weight: 550;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+
+        .main-content {
+            padding-top: 60px;
+        }
+    </style>
+    <script type="module">
+        import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.1.2/dist/web.js';
+
+        Typebot.initStandard({
+            typebot: "whatsapp-web-copy-copy-hj3dmdj",
+            apiHost: "https://whatsapp.orgasmotantrico.com.br",
+        });
+    </script>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="square">
+            <i class="fas fa-circle"></i>
+        </div>
+        <span class="text">Teste</span>
+    </div>
+
+    <div class="main-content">
+    </div>
+
+    <typebot-standard style="height: 100vh;"></typebot-standard>
+</body>
+</html>
